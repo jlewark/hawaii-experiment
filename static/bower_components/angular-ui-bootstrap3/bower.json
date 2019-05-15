@@ -1,0 +1,8 @@
+{
+  "name": "angular-ui-bootstrap3",
+  "version": "0.6.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kkruit/angular-ui-bootstrap3-bower.git"
+  }
+}

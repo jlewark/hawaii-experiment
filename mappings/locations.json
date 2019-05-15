@@ -1,0 +1,181 @@
+{
+  "location" : {
+    "properties" : {
+      "contributors" : {
+        "dynamic": false,
+        "properties": {
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          }
+        }
+      },
+      "description": {
+        "type": "string"
+      },
+      "location" : {
+        "type" : "geo_point"
+      },
+      "title": {
+        "type": "string"
+      },
+      "island": {
+        "type":"multi_field",
+        "fields" : {
+          "island" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "analyzed" : {
+            "type" : "string",
+            "index" : "analyzed"
+          }
+        }
+      },
+      "amenities": {
+        "fields" : {
+          "amenities" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "analyzed" : {
+            "type" : "string",
+            "index" : "analyzed"
+          }
+        }
+      },
+      "activities": {
+        "type": "multi_field",
+        "fields": {
+          "activities": {
+            "type" : "string",
+            "index": "not_analyzed"
+          },
+          "analyzed" : {
+            "type" : "string",
+            "index" : "analyzed"
+          }
+        }
+      },
+      "highlights": {
+         "type": "string"
+      },
+      "locationType": {
+        "type":"multi_field",
+        "fields" : {
+          "type" : {
+            "locationType" : "string",
+            "index" : "not_analyzed"
+          },
+          "analyzed" : {
+            "type" : "string",
+            "index" : "analyzed"
+          }
+        }
+      },
+      "category": {
+        "type":"multi_field",
+        "fields" : {
+          "category" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "analyzed" : {
+            "type" : "string",
+            "index" : "analyzed"
+          }
+        }
+      },
+      "tags": {
+        "type":"multi_field",
+        "fields" : {
+          "tags" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "analyzed" : {
+            "type" : "string",
+            "index" : "analyzed"
+          }
+        }
+      },
+      "url": {
+        "type": "string"
+      },
+      "emailAddress": {
+        "type": "string"
+      },
+      "badges": {
+        "type":"multi_field",
+        "fields" : {
+          "badges" : {
+            "type" : "string",
+            "index" : "not_analyzed"
+          },
+          "analyzed" : {
+            "type" : "string",
+            "index" : "analyzed"
+          }
+        }
+      },
+      "phone": {
+        "type": "string"
+      },
+      "address": {
+        "dynamic": false,
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "address2": {
+            "type": "string"
+          }
+          "city": {
+            "type": "string"
+          }
+          "state": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          }
+
+        }
+      }
+      "lifestyle": {
+        "type": "string"
+      },
+      "weather": {
+        "type": "string"
+      },
+      "parking": {
+        "type": "string"
+      },
+      "access": {
+        "type": "string"
+      },
+      "hours": {
+        "type": "string"
+      },
+      "safety": {
+        "type": "string"
+      },
+      "images": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "icon": {
+        "type": "string",
+        "index": "not_analyzed"
+      }
+
+    }
+  }
+
+
+}
